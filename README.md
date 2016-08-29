@@ -1,14 +1,16 @@
+Build with SConstruct
+
 DBoW3
 =====
 
 DBoW3 is an improved version of the DBow2 library, an open source C++ library for indexing and converting images into a bag-of-word representation. It implements a hierarchical tree for approximating nearest neighbours in the image feature space and creating a visual vocabulary. DBoW3 also implements an image database with inverted and direct files to index images and enabling quick queries and feature comparisons. The main differences with the previous DBow2 library are:
 
   * DBoW3 is able to use both binary and floating point descriptors out of the box. No need to reimplement any class for any descriptor.
-  * DBoW3 compiles both in linux and windows.  
+  * DBoW3 compiles both in linux and windows.
   * Some pieces of code have been rewritten to optimize speed. The interface of DBoW3 has been simplified.
 
 
-## 
+##
 ## Citing
 
 If you use this software in an academic work, please cite:
@@ -28,7 +30,7 @@ If you use this software in an academic work, please cite:
 }
 
 ## Installation notes
- 
+
 DBoW3 requires OpenCV only.
 
 For compiling the utils/demo_general.cpp you must compile against OpenCV 3. If you have installed the contrib_modules, use cmake option -DUSE_CONTRIB=ON to enable SURF.
@@ -37,10 +39,7 @@ For compiling the utils/demo_general.cpp you must compile against OpenCV 3. If y
 
 Check utils/demo_general.cpp
 
-### Classes 
+### Classes
 
 DBoW3 has two main classes: `Vocabulary` and `Database`. These implement the visual vocabulary to convert images into bag-of-words vectors and the database to index images.
 See utils/demo_general.cpp for an example
-
-
-
